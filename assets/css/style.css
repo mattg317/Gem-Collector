@@ -1,0 +1,21 @@
+.jumbotron{
+	text-align: center;
+}
+
+.col-lg-5{
+	text-align: center;
+	border: solid 1px black;
+	height:200px;
+	font-size: 30px;
+}
+
+#pieces{
+	border: solid 1px black;
+	text-align: center;
+	
+}
+
+.gems{
+	width: 100px; 
+	height: 100px
+}
