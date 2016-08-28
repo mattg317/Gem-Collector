@@ -55,11 +55,21 @@ loser.src="assets/Sounds/robotLoser.wav"
 		$('#losses').html("Losses: "+losses)
 	}
 
+//adding bounces============================================================
+$.fn.extend({
+	animateCss: function (animationName){
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		$(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+})
 
 //GamePlay===================================================================
 function playGame(){
 		$('#gem1').on("click", function(){
 			click.play();
+			$('#gem1').animateCss('tada');
 			score+=gem1;
 			$('#score').html(score);
 			outcome();
@@ -67,6 +77,7 @@ function playGame(){
 
 		$('#gem2').on("click", function(){
 			click.play();
+			$('#gem2').animateCss('tada');
 			score+=gem2;
 			$('#score').html(score);
 			outcome();
@@ -75,6 +86,7 @@ function playGame(){
 
 		$('#gem3').on("click", function(){
 			click.play();
+			$('#gem3').animateCss('tada');
 			score+=gem3;
 			$('#score').html(score);
 			outcome();
@@ -83,6 +95,7 @@ function playGame(){
 
 		$('#gem4').on("click", function(){
 			click.play();
+			$('#gem4').animateCss('tada');
 			score+=gem4;
 			$('#score').html(score);
 			outcome();

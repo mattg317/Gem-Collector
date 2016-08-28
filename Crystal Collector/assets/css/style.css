@@ -1,17 +1,33 @@
+body{
+	background:#52C6D7;
+}
+
 .jumbotron{
 	text-align: center;
 }
 
+.row{
+	font-family: 'Poiret One', cursive;
+}
+
 .col-lg-5{
+	background: #99CCFF;
 	text-align: center;
 	border: solid 1px black;
 	height:200px;
 	font-size: 30px;
 }
 
+.col-lg-2{
+	text-align: center;
+}
+
 #pieces{
 	border: solid 1px black;
 	text-align: center;
+	margin-top:20px;
+	padding:20px;
+	background: #775BAF;
 	
 }
 
@@ -19,3 +35,4 @@
 	width: 100px; 
 	height: 100px
 }
+
